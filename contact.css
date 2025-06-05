@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) ,url(./images/Destination-Afrique-lieux-tourisme-au-Cote-dIvoire.jpg);
+    background-size: cover;
+}
+nav .onglet{
+    margin-top: 3px;
+    margin-left: 300px;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(241, 241, 127);
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    width: 100%;
+}
+nav h1{
+    margin-right: 200px;
+    color: rgb(26, 199, 90);
+}
+nav li{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.sub-menu, .menu{
+    display: none;
+    position: absolute;
+    background-color:rgb(26, 199, 90); 
+    width: 200px;
+}
+.sub-menu li, .menu li{
+    display: block;
+}
+nav li a{
+    display: block;
+    padding: 20px;
+}
+nav li a:hover{
+   background-color: rgb(26, 199, 90);
+   color: #fff;
+}
+nav li:hover .sub-menu{
+    display: block;
+}
+nav li:hover .menu{
+    display: block;
+}
+.formulaire{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 250px;
+  
+}
+.formulaire h2{
+    color:rgb(241, 241, 127);
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+form{
+    width: 500px;
+    height: 390px;
+    background-color: rgba(173, 180, 227, 0.5);
+    padding: 60px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+input{
+    display: block;
+    justify-content: center;
+    margin: 10px auto;
+    width: 300px;
+    padding: 6px 10px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+input[type="submit"]{
+    background-color: rgb(251, 190, 61);
+    color: rgb(71, 70, 70);
+    font-weight: bold;
+    cursor: pointer;
+}
+#text{
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 300px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    display: block;
+}

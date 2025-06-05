@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+}
+nav .onglet{
+    margin-top: 3px;
+    margin-left: 300px;
+}
+nav a{
+text-decoration: none;
+color: rgb(246, 246, 105);
+cursor: pointer;
+}
+nav{
+display: flex;
+flex-wrap:wrap;
+justify-content: center;
+align-items: center;
+background-color:  rgba(80, 196, 249, 0.5);;
+position:relative;
+width: 100%;
+}
+nav li{
+display: inline-block;
+vertical-align: top;
+position: relative;
+}
+.sub-menu, .menu{
+display: none;
+position: absolute;
+background-color:rgb(26, 199, 90); 
+width: 200px;
+}
+.sub-menu li, .menu li{
+display: block;
+}
+nav li a{
+display: block;
+padding: 20px;
+}
+nav li a:hover{
+background-color: rgb(26, 199, 90);
+color: #fff;
+}
+nav li:hover .sub-menu{
+display: block;
+}
+nav li:hover .menu{
+display: block;
+}
+header{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    background:  rgba(255, 255, 255, 0.5);
+    background-size: cover;
+    color:rgb(241, 241, 127);
+    padding: 50px;
+}
+.slide{
+    width: 750px;
+    height: 360px;
+    margin-left: 500px;
+    background: url(./images/hotel.webp) ;
+    animation: slide 10s infinite;
+
+}
+header h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 750px;
+}
+.button{
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 1px solid #ede050;
+    margin-right: 700px;
+}
+.button h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: #090808;
+}
+.we{
+    display: flex;
+    background-color:  rgba(80, 196, 249, 0.5);;
+    padding: 20px;
+    height: 90px;
+    border-radius: 50px;
+}
+.we h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: #ede050;
+    margin-left: 500px;
+}
+.lor{
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+footer{
+    width: 100%;
+    background: rgba(80, 196, 249, 0.5);
+    color: #000;
+}
+.contenu{
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+}
+.contenu ul{
+    list-style: none;
+}
+.contenu ul li a{
+    text-decoration: none;
+    color:#000 ;
+}
+.bloc-footer h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    padding-bottom: 30px;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(26, 199, 90);
+}
+.bloc-footer{
+    padding: 70px;
+}
+.copy{
+    display: flex;
+    justify-content: center;
+}
+@keyframes slide{
+    25%{
+        background: url(./images/Les_cascades_de_Man-1024x683.jpg)
+    }
+    50%{
+        background: url(./images/Map.jpeg);
+    }
+}
+
+
